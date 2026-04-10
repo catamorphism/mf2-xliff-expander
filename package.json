@@ -1,0 +1,43 @@
+{
+  "name": "@messageformat/xliff-plural-expander",
+  "version": "0.0.1",
+  "description": "Plural expander and converter between XLIFF 2 and MessageFormat 2",
+  "keywords": [
+    "i18n",
+    "pluralformat",
+    "icu",
+    "messageformat",
+    "internationalization"
+  ],
+  "contributors": [
+    "Tim Chevalier <tjc@igalia.com>"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": ""
+  },
+  "main": "lib/index.js",
+  "type": "module",
+  "files": [
+    "lib/"
+  ],
+  "dependencies": {
+    "@babel/preset-env": "^7.29.2",
+    "@messageformat/xliff": "^0.1.0",
+    "jest": "^30.3.0",
+    "jest-ts-webcompat-resolver": "^1.0.1",
+    "ky": "^2.0.0",
+    "messageformat": "^4.0.0",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.28.5"
+  }
+}
